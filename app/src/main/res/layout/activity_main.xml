@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="发送消息"
+    android:textSize="20sp"
+    android:id="@+id/id_sendMessage"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_checkMessage"
+        android:text="查看消息"
+        android:textSize="20sp"
+        android:layout_below="@id/id_sendMessage"/>
+    <com.example.clark.unreadmessage.BottomBarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_bar"
+        android:layout_centerInParent="true">
+
+    </com.example.clark.unreadmessage.BottomBarView>
+
+</RelativeLayout>
